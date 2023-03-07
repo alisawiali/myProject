@@ -12,7 +12,7 @@
     margin: auto;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
     background-image: url(/imges/nirmal-rajendharkumar-88s0zVMLSqc-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@
     }
 
     nav {
-        width: 80%;
+        width:80%;
        margin: 0 auto;
         height: 75px;
         display: flex;
@@ -46,11 +46,13 @@
         z-index:3;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+    
     }
 
     ul {
         display: flex;
         list-style-type: none;
+  
       
         li {
             margin-left: 2rem;
@@ -65,7 +67,9 @@
         letter-spacing: 1px;
         border-radius: 10px;
         padding: 0.4rem;
+      
     }
+    
 
     a.active,
     a:hover {
@@ -157,7 +161,7 @@
     text-align: center;
     
     #title {
-        font-size: 3.5rem;
+        font-size: 5rem;
         color: color.$color-withe;
         font-weight: 700;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -168,7 +172,8 @@
     }
 
     #textHead {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        text-shadow: 0px 0px 10px #000;
         color: color.$color-withe;
         font-weight: 700;
 

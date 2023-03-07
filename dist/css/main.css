@@ -8,7 +8,7 @@
   margin: auto;
   width: 100%;
   margin: 0 auto;
-  height: 90vh;
+  height: 80vh;
   background-image: url(/imges/nirmal-rajendharkumar-88s0zVMLSqc-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -141,7 +141,7 @@ a:hover {
   text-align: center;
 }
 #textHeader #title {
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: #ffffff;
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -150,7 +150,8 @@ a:hover {
   text-shadow: 0px 0px 10px #000;
 }
 #textHeader #textHead {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-shadow: 0px 0px 10px #000;
   color: #ffffff;
   font-weight: 700;
 }
@@ -211,14 +212,14 @@ a:hover {
 #aside h2 {
   letter-spacing: 1px;
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 #aside .p_one {
   text-align: center;
   padding: 2rem 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 #aside .p_tow {
@@ -243,14 +244,15 @@ a:hover {
 
 #parentNav ul li a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   padding: 0.5rem;
   transition: all 0.5s ease;
   border-radius: 10px;
   margin: 1em;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
   background-color: blue;
   color: #fff;
 }
@@ -263,18 +265,25 @@ a.active, a:hover {
 .img img {
   width: 100%;
   height: 80%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000000;
+}
+
+.parent-title {
+  width: 80%;
 }
 
 .parent-title h4 {
   left: 1px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #000;
+  margin-bottom: 4rem;
 }
 
-.parent-title .p-three, cite {
-  font-size: 1.3em;
-  padding: 0 1rem;
+.parent-title .p-three,
+cite {
+  font-size: 1.8em;
 }
 
 #star {
@@ -293,7 +302,8 @@ a.active, a:hover {
   font-weight: 700;
   letter-spacing: 1px;
   transition: all 0.6s ease;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  text-shadow: 0px 0px 1.2px #000;
   transition: all 0.5s ease;
 }
 
@@ -302,7 +312,7 @@ a.active, a:hover {
 }
 
 #textparent p {
-  font-size: 1.4rem;
+  font-size: 3rem;
 }
 
 #sectionTow {
@@ -317,10 +327,23 @@ a.active, a:hover {
 
 #sectionTow img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000000;
 }
 
 .geordnetlistsection {
-  font-size: 1.4rem;
+  width: 80%;
+  font-size: 2rem;
+  margin: auto;
+}
+
+#listTextOne {
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+#geordnetlistsection p {
+  line-height: 30px;
 }
 
 #geordent {
@@ -331,13 +354,22 @@ a.active, a:hover {
 
 #sectionThree {
   margin-top: 1rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-#sectionThree p {
-  font-size: 1.4em;
+#sectionThree {
+  font-size: 1.8em;
+}
+
+#parentthree {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#parentthree p {
+  line-height: 30px;
 }
 
 #sectionfour {
@@ -349,15 +381,22 @@ a.active, a:hover {
 
 #sectionfour img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000000;
 }
 
 #parentvier h4 {
   padding-top: 2rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
+}
+
+#parentvier {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #parentvier p {
-  font-size: 1.4em;
+  font-size: 1.8em;
   padding-left: 2rem;
 }
 
@@ -392,7 +431,7 @@ a.active, a:hover {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-text: #0a58ca;
-  --bs-blue:blue;
+  --bs-blue: blue;
   --bs-secondary-text: #6c757d;
   --bs-success-text: #146c43;
   --bs-info-text: #087990;
@@ -402,17 +441,12 @@ a.active, a:hover {
   --bs-dark-text: #a2b8ce;
   --bs-primary-bg-subtle: #cfe2ff;
   --bs-secondary-bg-subtle: #c9c5c5;
-  --bs-hellwhite:#eeee;
-  --bs-white:#fff;
-}
-
-.content {
-  width: 80%;
+  --bs-hellwhite: #eeee;
+  --bs-white: #fff;
 }
 
 #container-body {
   position: relative;
-  max-width: 90%;
   margin: 4rem auto;
 }
 
@@ -458,7 +492,7 @@ a.active, a:hover {
 }
 
 #card p {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   padding-bottom: 1rem;
   word-break: break-all;
 }
@@ -639,8 +673,8 @@ a.active, a:hover {
   }
 }
 footer {
-  background-color: blue;
-  color: #fff;
+  background: linear-gradient(rgb(255, 255, 255), #747373);
+  color: #4c4b4b;
   padding: 1rem;
   cursor: pointer;
 }
@@ -650,7 +684,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   padding: 2rem;
-  color: #fff;
+  color: #464646;
   text-transform: capitalize;
 }
 
@@ -661,6 +695,7 @@ h2 {
 
 #footer-body a:hover {
   color: #000;
+  background-color: transparent;
 }
 
 .sec h2 {
@@ -769,7 +804,7 @@ h2 {
 .copyrightText {
   text-align: center;
   font-size: 1.4rem;
-  background-color: #000;
+  background: linear-gradient(rgb(123, 123, 123), rgb(42, 42, 42));
   color: #fff;
   padding: 0.3em 0;
   letter-spacing: 1px;
@@ -914,12 +949,9 @@ h1 {
   background-attachment: fixed;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-#section {
+#contents {
   width: 100vw;
+  height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 

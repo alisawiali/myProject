@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --bs-primary: #0d6efd;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
@@ -9,7 +8,7 @@
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-text: #0a58ca;
-    --bs-blue:blue;
+    --bs-blue: blue;
     --bs-secondary-text: #6c757d;
     --bs-success-text: #146c43;
     --bs-info-text: #087990;
@@ -19,8 +18,8 @@
     --bs-dark-text: #a2b8ce;
     --bs-primary-bg-subtle: #cfe2ff;
     --bs-secondary-bg-subtle: #c9c5c5;
-    --bs-hellwhite:#eeee;
-    --bs-white:#fff;
+    --bs-hellwhite: #eeee;
+    --bs-white: #fff;
 }
 
 
@@ -29,15 +28,10 @@
 
 
 
-.content{
-    width: 80%;
-}
 
-#container-body{
+#container-body {
     position: relative;
-    max-width: 90%;
     margin: 4rem auto;
-
 }
 
 
@@ -81,11 +75,13 @@
     padding: 1rem 0;
 }
 
-#card-par{
+#card-par {
     padding-top: 6rem;
     padding-bottom: 2rem;
-}#card p {
-    font-size: 1.4rem;
+}
+
+#card p {
+    font-size: 1.7rem;
     padding-bottom: 1rem;
 
     word-break: break-all;
@@ -94,77 +90,93 @@
 #card #btn {
     background-color: var(--bs-blue);
     color: #e1e1e1;
-    text-decoration:none;
-    padding:0.7rem;
+    text-decoration: none;
+    padding: 0.7rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     border-radius: 20px;
     transition: all 0.5s ease-in;
-}#card #btn:hover{
-    transform: translateY(-40px);
-    background-color:var(--bs-info) ;
-  
-
 }
+
+#card #btn:hover {
+    transform: translateY(-40px);
+    background-color: var(--bs-info);
+}
+
 #card img {
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}.fa-brands{
-    font-size: 4rem;
-}.fa-solid {
+}
+
+.fa-brands {
     font-size: 4rem;
 }
 
-.card-one{
+.fa-solid {
+    font-size: 4rem;
+}
+
+.card-one {
     border-radius: 20px;
     transition: all 0.7s ease-in;
 }
-.card-one  p:hover {
+
+.card-one p:hover {
     transform: translateY(-30px);
     transition: all 0.5s ease;
-   
+
 }
-.card-one:hover{
+
+.card-one:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px var(--bs-hellwhite);
 }
 
 
-.card-2{
+.card-2 {
     border-radius: 20px;
     transition: all 0.7s ease-in;
-}.card-2:hover {
+}
+
+.card-2:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px var(--bs-hellwhite);
 }
-.card-2 p:hover{
+
+.card-2 p:hover {
     transform: translateY(-7px);
     transition: all 0.5s ease;
 }
 
-.card-3{
+.card-3 {
     border-radius: 20px;
     transition: all 0.7s ease;
-    
-}.card-3 p:hover{
+
+}
+
+.card-3 p:hover {
     transform: translateY(-10px);
     transition: all 0.5s ease;
 }
-.card-3:hover{
+
+.card-3:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px var(--bs-hellwhite);
 }
 
-.card-4{
+.card-4 {
     border-radius: 20px;
     transition: all 0.7s ease;
-    
-}.card-4 p:hover{
+
+}
+
+.card-4 p:hover {
     transform: translateY(-10px);
     transition: all 0.5s ease;
 }
-.card-4:hover{
+
+.card-4:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px var(--bs-hellwhite);
 }

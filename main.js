@@ -76,3 +76,35 @@
 // document.body.appendChild(myfooters);
 
 
+
+
+// const myUl = document.getElementById("menuUl");
+
+
+
+
+// let navChildern = Array.from(myUl.children)
+// console.log(navChildern)
+
+// for(let i = 0; i <= navChildern.length;i++){
+//     navChildern[i].onmouseenter = function() {
+//         this.style.backgroundColor = "red";
+   
+//     }   
+//     navChildern[i].onmouseleave = function() {
+//         this.style.backgroundColor = "blue";
+   
+//     }   
+ 
+  
+// }
+
+let mybtn = document.getElementById("btnscroll");
+window.onscroll = function (){
+    if(window.scrollY >= 600){
+        mybtn.style.cssText = "dispaly:block; ";
+    }else{
+         this.style.cssText = "dispaky:none";
+    }
+}
+

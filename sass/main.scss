@@ -5,6 +5,7 @@
 @use "./colors/color.scss";
 @use "./footer.scss";
 @use "./anmlden.scss";
+@use "./buttonheader.scss";
 
 *{
     padding: 0;
@@ -13,12 +14,11 @@
     background-attachment: fixed;
 }
 
-html{
-    font-size: 62.5%;
-}
 
 
-#section{
+#contents{
     width: 100vw; 
+    height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
