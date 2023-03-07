@@ -1,0 +1,171 @@
+footer {
+    background-color: blue;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+#footer-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+#footer-body a,
+h2 {
+    transition: all 0.5s ease-in;
+}
+
+#footer-body a:hover {
+    color: #000;
+}
+
+
+.sec h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    position: relative;
+
+}
+
+
+.sec h2::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    left: 0px;
+    bottom: -5px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in;
+}
+
+.sec h2:hover:before {
+    width: 50%;
+}
+
+
+.sec h3 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.sec h3::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    left: 20px;
+    bottom: -5px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in;
+}
+
+.sec h3:hover:before {
+    width: 50%;
+}
+
+
+
+#foot-icon {
+    display: flex;
+    list-style: none;
+}
+
+
+#foot-icon .fa-brands {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+
+#twit {
+    color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+#yout {
+    color: red;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+#fac {
+    color: rgb(164, 164, 186);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+#inst {
+    color: rgb(195, 7, 7);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.Quli li {
+    list-style: none;
+
+}
+
+.Quli ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.2rem;
+}
+
+
+
+
+// contact ----------footer----------------->
+
+
+
+
+
+.infos {
+    display: flex;
+    
+}
+.infos a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.infos i {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.copyrightText{
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0.3em 0;
+    letter-spacing: 1px;
+}
+
+
+
+@media(max-width:600px) {
+    #footer-body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

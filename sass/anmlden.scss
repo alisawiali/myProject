@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#section-body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#0c0c0c, rgb(231, 231, 53));
+  position: relative;
+}
+
+#forms-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #dedddd00;
+  box-shadow: 0px 5px 10px #000;
+  backdrop-filter: blur(60px);
+  width: 500px;
+  padding: 2rem 3rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px #000;
+  text-align: center;
+  position: relative;
+
+}
+
+#forms-container h1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  left: 0px;
+  bottom: 10px;
+}
+
+
+
+#control input {
+  width: 100%;
+  margin: 1rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.checkbox {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  display: flex;
+
+}
+
+.checkbox label {
+  padding-left: 1.5rem;
+
+}
+
+
+
+#control input[type="submit"] {
+  background-color: #0f0f0f;
+  color: #fff;
+  transform: translate(0px);
+  transition: all 0.5s ease;
+  width: 100%;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+#control input[type="submit"]:hover {
+  background-color: #000;
+  transform: scale(1, 1.4);
+  opacity: 0.9;
+}
+
+#link {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+}
+
+#link a {
+  color: #000;
+}
+
+@media(max-width: 600px) {
+  #section-body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#3b3a3a, rgb(6, 34, 252));
+    position: relative;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  #forms-container{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 5px #000;
+    text-align: center;
+    position: relative;
+  
+  }
+  
+  
+}

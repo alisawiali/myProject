@@ -1,6 +1,24 @@
-box{
-    background-color: aliceblue;
-    font-size: 2rem;
-    text-transform: capitalize;
-    font-size: 2rem;
+@use "./abstarct/header-linke.scss";
+@use "./parents.scss";
+@use "./container.scss";
+@use "./sectionsonder.scss";
+@use "./colors/color.scss";
+@use "./footer.scss";
+@use "./anmlden.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+#section{
+    width: 100vw; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

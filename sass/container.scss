@@ -1,0 +1,180 @@
+
+:root{
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-text: #0a58ca;
+    --bs-blue:blue;
+    --bs-secondary-text: #6c757d;
+    --bs-success-text: #146c43;
+    --bs-info-text: #087990;
+    --bs-warning-text: #997404;
+    --bs-danger-text: #b02a37;
+    --bs-light-text: #6c757d;
+    --bs-dark-text: #a2b8ce;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #c9c5c5;
+    --bs-hellwhite:#eeee;
+    --bs-white:#fff;
+}
+
+
+
+
+
+
+
+.content{
+    width: 80%;
+}
+
+#container-body{
+    position: relative;
+    max-width: 90%;
+    margin: 4rem auto;
+
+}
+
+
+.container-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+.container-p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+
+}
+
+
+#contentes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#card {
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    word-break: break-all;
+}
+
+#titel h4 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+#card-par{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}#card p {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+
+    word-break: break-all;
+}
+
+#card #btn {
+    background-color: var(--bs-blue);
+    color: #e1e1e1;
+    text-decoration:none;
+    padding:0.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}#card #btn:hover{
+    transform: translateY(-40px);
+    background-color:var(--bs-info) ;
+  
+
+}
+#card img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}.fa-brands{
+    font-size: 4rem;
+}.fa-solid {
+    font-size: 4rem;
+}
+
+.card-one{
+    border-radius: 20px;
+    transition: all 0.7s ease-in;
+}
+.card-one  p:hover {
+    transform: translateY(-30px);
+    transition: all 0.5s ease;
+   
+}
+.card-one:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--bs-hellwhite);
+}
+
+
+.card-2{
+    border-radius: 20px;
+    transition: all 0.7s ease-in;
+}.card-2:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--bs-hellwhite);
+}
+.card-2 p:hover{
+    transform: translateY(-7px);
+    transition: all 0.5s ease;
+}
+
+.card-3{
+    border-radius: 20px;
+    transition: all 0.7s ease;
+    
+}.card-3 p:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
+.card-3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--bs-hellwhite);
+}
+
+.card-4{
+    border-radius: 20px;
+    transition: all 0.7s ease;
+    
+}.card-4 p:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
+.card-4:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--bs-hellwhite);
+}
+
+
+
+
+
+
+
+// @media(max-width:750px){
+
+// }

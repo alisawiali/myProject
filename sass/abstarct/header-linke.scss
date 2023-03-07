@@ -1,0 +1,224 @@
+@use "../colors/color.scss";
+@use "../fontsize/font.scss";
+
+
+.contents{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#main-header {
+    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+    background-image: url(/imges/nirmal-rajendharkumar-88s0zVMLSqc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // filter:drop-shadow(0px 2px 10px #252627);
+    background-attachment: fixed;
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+
+    #logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        box-shadow: 2px 2px 20px #e5e5e5; 
+    }
+
+    nav {
+        width: 80%;
+       margin: 0 auto;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        background-color:color.$color-withe;
+        align-items: center;
+        padding: 0rem 3rem;
+        cursor: pointer;
+        position: fixed;
+        z-index:3;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+      
+        li {
+            margin-left: 2rem;
+            list-style-type: none;
+        }
+    }
+
+    a {
+        color: rgb(43, 43, 40);
+        text-decoration: none;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        padding: 0.4rem;
+    }
+
+    a.active,
+    a:hover {
+        color: color.$color-withe;
+        transform: scale(1.2);
+        transition: all 0.5s ease-in;
+    }#menu-btn {
+        color: #000;
+        font-size: 3rem;
+        cursor: pointer;
+        display: none;
+    }#check{
+        display: none;
+    }#submit{
+        width: 100px;
+        font-size: 1.5rem;
+        background-color:color.$color-blue;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        margin-left: 2rem;
+        padding: 2px;
+        color: color.$color-withe;
+        cursor: pointer;
+        transition: all 0.7s ease-in;
+
+    }#submit:hover{
+        transform: scale(1.2);
+    }
+
+
+}
+
+
+
+
+@media (max-width:800px) {
+ 
+    #main-header nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: color.$color-black;
+        height: 81.0%;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }  #main-header #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        box-shadow: 2px 2px 20px #c7c5c5; 
+    }  #main-header nav ul li {
+        margin-top: 1rem;
+    }   #main-header nav ul li a{
+        font-size: 1.4rem;
+        display: block;
+    } #main-header nav ul a:hover{
+        background-color:color.$color-blue;
+    }
+
+    #main-header a.active,
+    a:hover {
+        width: 30%;
+        margin: auto;
+        border-radius: 50px;
+    }  #main-header
+    #menu-btn{
+        color: color.$color-black;
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+    }#check:checked ~ ul{
+        left: 0%;
+    }#submit{
+        margin-top: 1rem;
+    }
+}
+
+// // ---------------#TextHeader-------------------------
+
+
+#textHeader {
+
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    left: 5%;
+    text-align: center;
+    
+    #title {
+        font-size: 3.5rem;
+        color: color.$color-withe;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 0px 0px 1px #d1c4c4;
+        word-break: break-all;
+        text-shadow: 0px 0px 10px #000;
+
+    }
+
+    #textHead {
+        font-size: 1.5rem;
+        color: color.$color-withe;
+        font-weight: 700;
+
+    }
+
+    #btnTittel {
+        width: 200px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(13, 0, 255);
+        color:color.$color-withe;
+        transition: all 0.5s ease-in;
+        padding: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    #btnTittel:hover {
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width:850px) {
+    #textHeader {
+        margin-top: 5rem;
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+
+        #title {
+            font-size: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        #textHead {
+            font-size: font.$font-sizeToerem;
+            color: color.$color-withe;
+            font-weight: 700;
+            font-size: 1rem;
+
+        }
+
+        #btnTittel {
+            width: 150px;
+            border-radius: 50px;
+            word-break: break-all;
+            margin: 1rem 0;
+            background-color:color.$color-blue;
+            color: color.$color-withe;
+        }
+    }
+}
+
