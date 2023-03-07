@@ -10,76 +10,95 @@
 #blocksection{
     text-align: center;
     position: relative;
-    padding-bottom: 3rem; 
+    padding-bottom: 10rem; 
 }
 #blocksection h3{
     color: color.$color-black;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     padding-bottom: 2rem;
 }
+
     
     #blocksection .textangebot{
         padding: 1rem 0;
-        font-size: 1.5em;
+        font-size: 2em;
+        font-weight: 300;
     }
 
     // --------cardangeobt--------
-    #cardangeobt{
-        border: 0.1px solid blue;
-        display: block;
-        width: 60%;
-        height: 60vh;
-        line-height: 30px;
-        margin: 3rem auto;
-       border-radius: 10px;
-        transition: all 0.5s ease;
-    }
 
-    #cardangeobt:hover{
-      transform: translateY(-10px);
-      box-shadow: 0px 0px 5px #000;
-    }
-    #cardangeobt #angeobtspan{
-        width: 100%;
-        font-size: 1.5rem;
-        display: inline-block;
-        background: linear-gradient(to right, rgb(28, 28, 244),#a1a9e4);
-        color: #fff;
-        padding: 1rem;
+    #cardangeobt{
+        border: 1px solid color.$color-blue;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-    }
-    #cardangeobt .angebotpar{
-        color: color.$color-blue;
-        font-size: 2rem;
-        padding: 1rem 0;
-    }
-    #cardangeobt span{
-        color: red;
-        font-size: 1.5rem;
-    }
-
-    #cardangeobt li{
-        list-style: none;
-      transition: all 0.7s ease;
-    }
- 
-    #cardangeobt li:hover{
-        border-bottom: 0.4px solid #000;
-        font-weight: 700;
-    }
-
-    @media(max-width:450px){
-        #cardangeobt #angeobtspan{
-            font-size: 1rem;
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+       padding-bottom: 2rem;
+       line-height: 30px;
+       border-radius: 10px;
+        #angeobtheader{
+            word-break: break-all;
+            padding: 2rem;
+            font-size: 2.5rem;
+            background-color: rgb(0, 81, 233);
+            display: block;
+            color: #fff;
+            margin-bottom: 2rem;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }.angebotpar{
+            font-size: 2rem;
+            color:blue;
+            letter-spacing: 1px;
+        }span{
+            color: red;
+            font-size: 1.9em;
+        }li{
+            list-style-type: none;
+            font-size: 1.9rem;
+            padding: 0.5em 0;
+            transition: all 0.5s ease-in;
         }
-        #cardangeobt span{
-            font-size: 1rem;
+        li:hover{
+            border-bottom: 1px solid #000;
+            transform: translateY(-5px);
+            background-color: #eee;
+        }
+    }
+
+    @media(max-width:500px){
+        #blocksection h3{
+            font-size: 2rem;
+        }
+        #blocksection .textangebot{
+            padding: 1rem 0;
+            font-size: 1em;
         }
         #cardangeobt{
-            width: 70%;
-            height: 100vh;
+            border: 1px solid color.$color-blue;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            height: 100%;
+            width: 100%;
             word-break: break-all;
+            margin: 0 auto;
+           padding-bottom: 2rem;
+           line-height: 15px;
+        }
+
+        #cardangeobt #angeobtheader{
+            word-break: break-all;
+            padding: 1rem;
+            font-size: 1rem;
+            display: block;
+         
+        }#cardangeobt .angebotpar{
+            font-size: 1rem;
+        }#cardangeobt span{
+            font-size: 1rem;
+        }#cardangeobt li{ 
+            font-size: 1rem;
         }
     }

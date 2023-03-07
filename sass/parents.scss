@@ -44,6 +44,7 @@
 #parentNav ul li {
     display: inline-block;
     padding: 1rem 0;
+    text-align: center;
 }
 
 #parentNav ul li a {
@@ -221,6 +222,10 @@ cite {
 @media(max-width:600px) {
     #parentNav ul {
         flex-direction: column;
+
+    }
+    #parentNav ul li a{
+        font-size: 1.2rem;
     }
 
     #detals {

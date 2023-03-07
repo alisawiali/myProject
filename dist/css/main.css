@@ -25,8 +25,8 @@
   box-shadow: 2px 2px 20px #e5e5e5;
 }
 #main-header nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 0rem;
   height: 75px;
   display: flex;
   justify-content: space-between;
@@ -150,8 +150,8 @@ a:hover {
   text-shadow: 0px 0px 10px #000;
 }
 #textHeader #textHead {
-  font-size: 2rem;
-  text-shadow: 0px 0px 10px #000;
+  font-size: 2.4rem;
+  text-shadow: 0px 0px 5px #000;
   color: #ffffff;
   font-weight: 700;
 }
@@ -240,6 +240,7 @@ a:hover {
 #parentNav ul li {
   display: inline-block;
   padding: 1rem 0;
+  text-align: center;
 }
 
 #parentNav ul li a {
@@ -404,6 +405,9 @@ cite {
   #parentNav ul {
     flex-direction: column;
   }
+  #parentNav ul li a {
+    font-size: 1.2rem;
+  }
   #detals {
     display: flex;
     flex-direction: column;
@@ -452,7 +456,7 @@ cite {
 
 .container-title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   font-weight: 700;
   padding-bottom: 2rem;
   text-transform: capitalize;
@@ -461,28 +465,30 @@ cite {
 
 .container-p {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 300;
   padding-bottom: 4rem;
 }
 
 #contentes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 #card {
-  margin: 1rem;
+  margin-top: 3rem;
   padding: 1rem;
-  width: 200px;
+  width: 290px;
+  height: 290px;
   word-break: break-all;
 }
 
 #titel h4 {
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   padding: 1rem 0;
 }
 
@@ -587,6 +593,32 @@ cite {
   box-shadow: 0px 0px 10px var(--bs-hellwhite);
 }
 
+@media (max-width: 500px) {
+  .container-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .container-p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+  #card {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 200px;
+    height: 300px;
+    word-break: break-all;
+  }
+  #titel h4 {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+  #card p {
+    font-size: 1.2rem;
+  }
+}
 #sectionsonderangebot {
   margin: 6rem 0;
   width: 100%;
@@ -596,80 +628,98 @@ cite {
 #blocksection {
   text-align: center;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 10rem;
 }
 
 #blocksection h3 {
   color: #000000;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   padding-bottom: 2rem;
 }
 
 #blocksection .textangebot {
   padding: 1rem 0;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: 300;
 }
 
 #cardangeobt {
-  border: 0.1px solid blue;
-  display: block;
+  border: 1px solid rgb(0, 0, 238);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
   width: 60%;
-  height: 60vh;
+  margin: 0 auto;
+  padding-bottom: 2rem;
   line-height: 30px;
-  margin: 3rem auto;
   border-radius: 10px;
-  transition: all 0.5s ease;
 }
-
-#cardangeobt:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 5px #000;
-}
-
-#cardangeobt #angeobtspan {
-  width: 100%;
-  font-size: 1.5rem;
-  display: inline-block;
-  background: linear-gradient(to right, rgb(28, 28, 244), #a1a9e4);
+#cardangeobt #angeobtheader {
+  word-break: break-all;
+  padding: 2rem;
+  font-size: 2.5rem;
+  background-color: rgb(0, 81, 233);
+  display: block;
   color: #fff;
-  padding: 1rem;
+  margin-bottom: 2rem;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
 #cardangeobt .angebotpar {
-  color: rgb(0, 0, 238);
   font-size: 2rem;
-  padding: 1rem 0;
+  color: blue;
+  letter-spacing: 1px;
 }
-
 #cardangeobt span {
   color: red;
-  font-size: 1.5rem;
+  font-size: 1.9em;
 }
-
 #cardangeobt li {
-  list-style: none;
-  transition: all 0.7s ease;
+  list-style-type: none;
+  font-size: 1.9rem;
+  padding: 0.5em 0;
+  transition: all 0.5s ease-in;
 }
-
 #cardangeobt li:hover {
-  border-bottom: 0.4px solid #000;
-  font-weight: 700;
+  border-bottom: 1px solid #000;
+  transform: translateY(-5px);
+  background-color: #eee;
 }
 
-@media (max-width: 450px) {
-  #cardangeobt #angeobtspan {
+@media (max-width: 500px) {
+  #blocksection h3 {
+    font-size: 2rem;
+  }
+  #blocksection .textangebot {
+    padding: 1rem 0;
+    font-size: 1em;
+  }
+  #cardangeobt {
+    border: 1px solid rgb(0, 0, 238);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 100%;
+    word-break: break-all;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    line-height: 15px;
+  }
+  #cardangeobt #angeobtheader {
+    word-break: break-all;
+    padding: 1rem;
+    font-size: 1rem;
+    display: block;
+  }
+  #cardangeobt .angebotpar {
     font-size: 1rem;
   }
   #cardangeobt span {
     font-size: 1rem;
   }
-  #cardangeobt {
-    width: 70%;
-    height: 100vh;
-    word-break: break-all;
+  #cardangeobt li {
+    font-size: 1rem;
   }
 }
 footer {
@@ -690,6 +740,7 @@ footer {
 
 #footer-body a,
 h2 {
+  font-size: 1.4rem;
   transition: all 0.5s ease-in;
 }
 
@@ -747,7 +798,7 @@ h2 {
 }
 
 #foot-icon .fa-brands {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-left: 1rem;
 }
 
@@ -764,7 +815,7 @@ h2 {
 }
 
 #fac {
-  color: rgb(164, 164, 186);
+  color: rgb(0, 0, 255);
   padding: 0.5rem;
   border-radius: 10px;
 }
@@ -797,7 +848,7 @@ h2 {
 .infos i {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-right: 1rem;
 }
 
@@ -942,17 +993,31 @@ h1 {
     position: relative;
   }
 }
+button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  right: 0;
+  position: relative;
+}
+
+#btnscroll {
+  background-color: rgb(146, 148, 199);
+  position: fixed;
+  padding: 2rem;
+  right: 20px;
+  font-size: 3rem;
+  font-weight: 500;
+  border-radius: 10px;
+  line-height: 10px;
+  display: none;
+  bottom: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-attachment: fixed;
-}
-
-#contents {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

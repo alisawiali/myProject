@@ -28,7 +28,6 @@
 
 
 
-
 #container-body {
     position: relative;
     margin: 4rem auto;
@@ -37,7 +36,7 @@
 
 .container-title {
     text-align: center;
-    font-size: 3.5rem;
+    font-size:4.2rem;
     font-weight: 700;
     padding-bottom: 2rem;
     text-transform: capitalize;
@@ -47,31 +46,31 @@
 
 .container-p {
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 300;
     padding-bottom: 4rem;
-
 }
 
 
 #contentes {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
-
+    padding: 2rem;
 }
 
 #card {
-    margin: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
-    width: 200px;
+    width: 290px;
+    height: 290px;
     word-break: break-all;
 }
 
 #titel h4 {
     font-size: 3rem;
-    text-align: left;
+text-align: center;
     padding: 1rem 0;
 }
 
@@ -83,7 +82,6 @@
 #card p {
     font-size: 1.7rem;
     padding-bottom: 1rem;
-
     word-break: break-all;
 }
 
@@ -187,6 +185,30 @@
 
 
 
-// @media(max-width:750px){
+@media(max-width:500px){
+    .container-title{
+        text-align: center;
+        font-size:2rem;
 
-// }
+    }.container-p {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        padding-bottom: 2rem;
+    }
+    
+    #card {
+        margin-top: 3rem;
+        padding: 1rem;
+        width: 200px;
+        height: 300px;
+        word-break: break-all;
+    }
+    #titel h4 {
+        font-size: 1.4rem;
+        padding: 1rem 0;
+    }
+    #card p {
+        font-size: 1.2rem;
+    }
+}

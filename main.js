@@ -99,12 +99,30 @@
   
 // }
 
+
+
+let mymain = document.getElementById("main-header");
+
 let mybtn = document.getElementById("btnscroll");
 window.onscroll = function (){
-    if(window.scrollY >= 600){
-        mybtn.style.cssText = "dispaly:block; ";
+    if(window.scrollY >= mymain.offsetHeight){
+        mybtn.style.display = "block ";
+        console.log(window.scrollY)
     }else{
-         this.style.cssText = "dispaky:none";
+         mybtn.style.display = "none";
     }
+
+} 
+mybtn.onclick = function (){
+    scroll({
+        top:0,
+        left:0,
+        behavior:"smooth",
+    });
 }
+
+
+
+console.log(mymain.offsetHeight)
+
 
